@@ -1,3 +1,4 @@
+//Implenta NumerosPrimosEnSecuencia que pida un número e indique cuántos números primos existen entre el 1 y dicho número.
 window.onload=function (){
   document.getElementById('boton').onclick=primos;
 }

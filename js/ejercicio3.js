@@ -1,3 +1,4 @@
+//Implementa MultiplosDeCinco que pida 7 números e indique si alguno es múltiplo de 5.
 window.onload=function(){
   document.getElementById('boton').onclick=recogerDatos;
 }

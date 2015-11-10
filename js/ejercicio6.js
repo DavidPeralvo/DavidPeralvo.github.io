@@ -1,3 +1,4 @@
+//Implementa OrdenaTres que pida tres números y los muestre ordenados de menor a mayor.
 window.onload=function(){
   document.getElementById('boton').onclick=comprobarvalores;
 }

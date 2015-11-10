@@ -1,3 +1,4 @@
+//Implenta NumeroPrimo que pida un número e indique si es primo o no.
 window.onload=function(){
   document.getElementById('boton').onclick=calcular;
 }
