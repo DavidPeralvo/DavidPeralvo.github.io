@@ -1,9 +1,9 @@
 //Implenta NumerosPrimosEnSecuencia que pida un número e indique cuántos números primos existen entre el 1 y dicho número.
 window.onload=function (){
-  document.getElementById('boton').onclick=primos;
+  document.getElementById('boton').onclick=numerosPrimosEnSecuencia;
 }
 
-function primos(){
+function numerosPrimosEnSecuencia(){
   var cantidadPrimos=0;
   numero=parseInt(document.getElementById('numero').value.trim());
   if(validar(numero)){

@@ -1,8 +1,8 @@
 //Implementa MultiplosDeCinco que pida 7 números e indique si alguno es múltiplo de 5.
 window.onload=function(){
-  document.getElementById('boton').onclick=recogerDatos;
+  document.getElementById('boton').onclick=multiploDeCinco;
 }
-function recogerDatos(){
+function multiploDeCinco(){
   estado=true;
   var formulario=document.forms.formulario;
    var valores=new Array();

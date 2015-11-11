@@ -1,10 +1,10 @@
 //Implementa ComprobacionHora que solicite los segundos, minutos y hora e indique si es correcta. Si lo fuera, ha de mostrar la hora un segundo después.
 window.onload=function(){
-  document.getElementById('boton').onclick=calculahora;
+  document.getElementById('boton').onclick=comprobacionHora;
 
 }
 
-function calculahora() {
+function comprobacionHora() {
       var hora=parseInt(document.getElementById('horas').value);
       var minutos=parseInt(document.getElementById('minutos').value);
       var segundos=parseInt(document.getElementById('segundos').value);

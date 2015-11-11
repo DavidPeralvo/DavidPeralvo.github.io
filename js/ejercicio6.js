@@ -1,9 +1,9 @@
 //Implementa OrdenaTres que pida tres números y los muestre ordenados de menor a mayor.
 window.onload=function(){
-  document.getElementById('boton').onclick=comprobarvalores;
+  document.getElementById('boton').onclick=ordenaTres;
 }
 
-function comprobarvalores() {
+function ordenaTres() {
     var numero1=parseInt(document.getElementById('numero1').value);
     var numero2=parseInt(document.getElementById('numero2').value);
     var numero3=parseInt(document.getElementById('numero3').value);

@@ -1,9 +1,9 @@
 //Implenta NumeroPrimo que pida un número e indique si es primo o no.
 window.onload=function(){
-  document.getElementById('boton').onclick=calcular;
+  document.getElementById('boton').onclick=numeroPrimo;
 }
 
-function calcular(){
+function numeroPrimo(){
   respuesta=true;
   var numero=document.getElementById('numero').value.trim();
     if(validar(numero)){

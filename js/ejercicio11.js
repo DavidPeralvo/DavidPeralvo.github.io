@@ -2,10 +2,10 @@
 var contador=0;
  var suma=0;
 window.onload=function (){
-  document.getElementById('boton').onclick=calcularmedia;
+  document.getElementById('boton').onclick=mediaPositivos;
 }
 
-function calcularmedia(){
+function mediaPositivos(){
    numero=(document.getElementById('numeros').value.trim());
 
   console.log(contador);

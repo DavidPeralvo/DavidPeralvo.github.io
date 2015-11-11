@@ -2,10 +2,10 @@
 //a.cuentas cifras tiene
 //b.lo muestre del reves
 window.onload=function(){
-  document.getElementById('boton').onclick=contador;
+  document.getElementById('boton').onclick=decena;
 }
 
-function contador() {
+function decena() {
   valores=document.getElementById('numero').value;
   var longitud = valores.length-1;
   var cadena="";
