@@ -5,7 +5,7 @@
 function mostrar(valor,indice){
     document.write(valor+" indice: "+indice);
     document.write("<br>");
-    document.close();
+
 
 }
 

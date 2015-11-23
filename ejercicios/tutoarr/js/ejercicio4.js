@@ -21,7 +21,6 @@ function filtro(arr){
 
         }
     }
-
     return arr2;
 }
 window.addEventListener("load",funcion);
