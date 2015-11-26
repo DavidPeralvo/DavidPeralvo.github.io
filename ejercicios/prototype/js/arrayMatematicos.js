@@ -1,7 +1,7 @@
 /**
  * Created by DavidPeralvoGomez on 24/11/15.
  */
-function ArrayMatematicos(filas,columnas){
+function ArrayMatematicos(){
     this.filas=document.getElementById("filas").value;
     this.columnas=document.getElementById("columnas").value;
     this.contenido=this.crearArray();
@@ -10,7 +10,7 @@ function ArrayMatematicos(filas,columnas){
 ArrayMatematicos.prototype.sumar=function (array2){
     var suma;
     if(this.coincideMatriz(array2)) {
-        suma=new ArrayMatematicos(this.filas,this.columnas);
+        suma=new ArrayMatematicos();
         for (var i = 0; i < this.filas; i++) {
             for (var j = 0; j < this.columnas; j++) {
                 suma.contenido[i][j]= this.contenido[i][j] + array2.contenido[i][j];
@@ -27,7 +27,7 @@ ArrayMatematicos.prototype.sumar=function (array2){
 ArrayMatematicos.prototype.restar=function(array2) {
     var resta;
     if (this.coincideMatriz(array2)) {
-        resta = new ArrayMatematicos(this.filas, this.columnas);
+        resta = new ArrayMatematicos();
         for (var i = 0; i < this.filas; i++) {
             for (var j = 0; j < this.columnas; j++) {
                 resta.contenido[i][j] = this.contenido[i][j] - array2.contenido[i][j];
@@ -42,7 +42,7 @@ ArrayMatematicos.prototype.restar=function(array2) {
 ArrayMatematicos.prototype.multiplicar=function(array2){
     var multiplicar;
     if(this.coincideMatriz(array2)){
-        multiplicar=new ArrayMatematicos(this.filas,this.columnas);
+        multiplicar=new ArrayMatematicos();
 
     }
     else{
