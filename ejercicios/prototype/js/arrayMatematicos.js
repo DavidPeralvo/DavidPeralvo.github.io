@@ -116,7 +116,7 @@ function suma(){
 }
 function resta(){
     var contenedor=document.getElementById("contenido");
-    var sumando1,sumando2,resultado;
+    var resta1,resta2,resultado;
 
     resta1=new ArrayMatematicos();
     resta2=new ArrayMatematicos();
