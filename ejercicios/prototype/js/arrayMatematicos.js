@@ -24,6 +24,7 @@ ArrayMatematicos.prototype.sumar=function (array2){
 
 }
 
+
 ArrayMatematicos.prototype.restar=function(array2) {
     var resta;
     if (this.coincideMatriz(array2)) {
