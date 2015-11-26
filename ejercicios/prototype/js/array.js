@@ -3,12 +3,13 @@
  */
 
 function inicio() {
-    Array.prototype.annadir = function (elemento) {
-        this.push(elemento);
-    }
+
 
     var array1 = [0, 1, 2];
     var elemento = 2;
+    Array.prototype.annadir = function (elemento) {
+        this.push(elemento);
+    }
     console.log("Array original");
     console.log(array1);
     array1.annadir(elemento);
