@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        input{
+            border: none;
+            border-bottom:1px solid ;
+        }
+    fieldset{
+        margin: 0 auto;
+        width: 30%;
+        border-radius: 10px;
+    }
+        #peso{
+            width: 10%;
+        }
+     #enviar{
+         border-radius: 10px;
+         margin: 0 auto;
+     }
+
+    </style>
+</head>
+<body>
+<h1>Lindo gatito</h1>
+
+<form>
+    <fieldset>
+        <legend> Datos del gatito</legend>
+       Nombre del gato: <input type="text" name="nombre" id="nombre" required placeholder="Miau"><br><br>
+       Fecha Nacimiento: <input type="date" name="fecha" id="fecha" required><br><br>
+       Peso: <input type="number" name="peso" id="peso" required placeholder="2" maxlength="2">Kg<br><br>
+       Raza: <select name="raza" id="raza">
+        <option value="Nisu">Nisu</option>
+        <option value="Siames">Siames</option>
+        <option value="Persa">Persa</option>
+        <option value="Siberiano">Siberiano</option>
+        <option value="Bombay">Bombay</option>
+    </select> <br><br>
+
+        <input type="submit" name="enviar" id="enviar" value="Enviar">
+
+    </fieldset>
+
+
+</form>
+
+
+<script type="text/javascript" src="../js/lindogatito.js"></script>
+</body>
+</html>

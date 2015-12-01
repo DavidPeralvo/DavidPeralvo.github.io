@@ -1,10 +1,17 @@
 /**
  * Created by DavidPeralvoGomez on 24/11/15.
  */
+
+
 function ArrayMatematicos(){
-    this.filas=document.getElementById("filas").value;
-    this.columnas=document.getElementById("columnas").value;
-    this.contenido=this.crearArray();
+
+           this.filas = document.getElementById("filas").value;
+           this.columnas = document.getElementById("columnas").value;
+           this.contenido = this.crearArray();
+
+
+
+
 }
 
 ArrayMatematicos.prototype.sumar=function (array2){
@@ -44,6 +51,16 @@ ArrayMatematicos.prototype.multiplicar=function(array2){
     var multiplicar;
     if(this.coincideMatriz(array2)){
         multiplicar=new ArrayMatematicos();
+        for(var i=0;i<this.filas;i++){
+            for(var j=0;j<array2.columnas;j++){
+                for (var k=0; k< this.columnas; k++) {
+                    multiplicar.contenido[i][j]+= this.contenido[i][k] * array2.contenido[k][j];
+                }
+
+
+            }
+        }
+        return multiplicar;
 
     }
     else{
@@ -100,7 +117,8 @@ ArrayMatematicos.prototype.transpuesta=function(){
 }
 
 function suma(){
-    var contenedor=document.getElementById("contenido");
+    try {
+        if (comprobarCasilla()) {
     var sumando1,sumando2,resultado;
 
     sumando1=new ArrayMatematicos(filas,columnas);
@@ -109,46 +127,100 @@ function suma(){
     contenedor.innerHTML="";
     contenedor.innerHTML+="Matriz 1 <br>"+sumando1.mostrarMatriz();
     contenedor.innerHTML+="Matriz 2 <br>"+sumando2.mostrarMatriz();
-    contenedor.innerHTML+="Resultado <br>"+resultado.mostrarMatriz();
+    contenedor.innerHTML+="Resultado <br>"+resultado.mostrarMatriz();}}
+    catch (e) {
 
+        contenedor.innerHTML = e.message;
+    }
 
 
 
 }
 function resta(){
-    var contenedor=document.getElementById("contenido");
+    try {
+        if (comprobarCasilla()) {
     var resta1,resta2,resultado;
-
     resta1=new ArrayMatematicos();
     resta2=new ArrayMatematicos();
     resultado=resta1.restar(resta2);
     contenedor.innerHTML="";
     contenedor.innerHTML+="Matriz 1 <br>"+resta1.mostrarMatriz();
     contenedor.innerHTML+="Matriz 2 <br>"+resta2.mostrarMatriz();
-    contenedor.innerHTML+="Resultado <br>"+resultado.mostrarMatriz();
+    contenedor.innerHTML+="Resultado <br>"+resultado.mostrarMatriz();}}
+    catch (e) {
+
+        contenedor.innerHTML = e.message;
+    }
+
 
 
 
 
 }
 function transpuesta(){
-    var contenedor=document.getElementById("contenido");
+    try {
+        if (comprobarCasilla()) {
     var trans,resultado;
     trans=new ArrayMatematicos();
     resultado=trans.transpuesta();
 
     contenedor.innerHTML="";
     contenedor.innerHTML+="Matriz  <br>"+trans.mostrarMatriz();
-    contenedor.innerHTML+="Resultado <br>"+resultado.mostrarMatriz();
+    contenedor.innerHTML+="Resultado <br>"+resultado.mostrarMatriz();}}
+    catch (e) {
+
+        contenedor.innerHTML = e.message;
+    }
 
 
 
 }
 
+function multiplicacion(){
+
+    try {
+        if (comprobarCasilla()) {
+    var producto1,producto2,resultado;
+    producto1=new ArrayMatematicos();
+    producto2=new ArrayMatematicos();
+    resultado=producto1.multiplicar(producto2);
+    contenedor.innerHTML="";
+    contenedor.innerHTML+="Matriz 1 <br>"+producto1.mostrarMatriz();
+    contenedor.innerHTML+="Matriz 2 <br>"+producto2.mostrarMatriz();
+    contenedor.innerHTML+="Resultado <br>"+resultado.mostrarMatriz();}}
+    catch (e) {
+
+        contenedor.innerHTML = e.message;
+    }
+
+}
+
+function comprobarCasilla() {
+
+    if (fila=="" ||columna=="") {
+        throw new Error("Introduce los campos");
+        return false;
+    }
+    else{
+     return true;
+
+}}
 
 
-window.addEventListener('load', function(){
+
+enviar.addEventListener('click',function() {
+    fila = document.getElementById("filas").value;
+    columna = document.getElementById("columnas").value;
+    contenedor.innerHTML="Datos creados";
+});
+window.addEventListener('load', function() {
+    enviar=document.getElementById('enviar');
+    error = document.getElementById("error");
+    contenedor = document.getElementById("contenido");
     document.getElementById('sumar').addEventListener("click", suma);
     document.getElementById('restar').addEventListener("click", resta);
     document.getElementById('transpuesta').addEventListener("click", transpuesta);
+    document.getElementById('multiplicar').addEventListener("click", multiplicacion);
+
 });
+
