@@ -46,6 +46,11 @@ document.getElementById("enviar").onclick=function(){
             error.style.display="none";
             document.getElementById("boton").style.display='block';
         }
+        titulo=document.getElementById("nombreTarea").value="";
+        modulo=document.getElementById("modulo").value="";
+        descripcion=document.getElementById("contenido").value="";
+        horario=document.getElementById("hora").value="";
+        fecha=document.getElementById("fecha").value="";
     }
 
     console.log(comprobarFecha(fecha));
@@ -71,7 +76,7 @@ function comprobarModulo(modulo){
     else{ return true;}
 }
 function comprobarDescripcion(descripcion){
-    if(titulo==""){
+    if(descripcion==""){
         tipoError="Por favor introduzca la descripción de la tarea ";
 
         return false;
