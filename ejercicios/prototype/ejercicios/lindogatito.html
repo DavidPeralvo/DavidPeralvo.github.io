@@ -4,33 +4,111 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
+        body{
+            background: #E8EAF6;
+            margin: 0;
+            padding: 0; }
+        header{width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            height: 30%;
+            background: #3F51B5;}
+        h1{
+            font-family: sans-serif;
+            color: white;
+            margin: 0;
+            padding: 10px;}
         input{
             border: none;
-            border-bottom:1px solid ;
+            border-bottom:1px solid ;}
+         fieldset{
+             background: white;
+             margin: 0 auto;
+             width: 30%;
+            border-radius: 10px; }
+
+
+        #peso{  width: 10%;  }
+        #enviar:hover{
+            color: black;
+            background: #E8EAF6;
         }
-    fieldset{
-        margin: 0 auto;
-        width: 30%;
-        border-radius: 10px;
-    }
-        #peso{
-            width: 10%;
-        }
-     #enviar{
+        #enviar{
+            border: none;
+            background:#3F51B5 ;
+            color: white;
          border-radius: 10px;
-         margin: 0 auto;
-     }
+         margin: 0 auto;  }
+
+         #ano{
+         width: 15%;
+         font-size: 1em; }
+
+        main{
+            font-family: sans-serif;
+            margin-top: 5%; }
+
 
     </style>
 </head>
 <body>
-<h1>Lindo gatito</h1>
-
+<header>
+    <h1>Lindo Gatito</h1>
+</header>
+<main>
 <form>
     <fieldset>
         <legend> Datos del gatito</legend>
        Nombre del gato: <input type="text" name="nombre" id="nombre" required placeholder="Miau"><br><br>
-       Fecha Nacimiento: <input type="date" name="fecha" id="fecha" required><br><br>
+       Fecha Nacimiento: <select name="dia" id="dia">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="16">15</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+
+
+    </select> / <select name="mes" id="mes">
+        <option value="1">Enero</option>
+        <option value="2">Febrero</option>
+        <option value="3">Marzo</option>
+        <option value="4">Abril</option>
+        <option value="5">Mayo</option>
+        <option value="6">Junio</option>
+        <option value="7">Julio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+
+    </select> / <input type="number" id="ano" name="ano" placeholder="2015" required>
+        <br><br>
        Peso: <input type="number" name="peso" id="peso" required placeholder="2" maxlength="2">Kg<br><br>
        Raza: <select name="raza" id="raza">
         <option value="Nisu">Nisu</option>
@@ -40,14 +118,18 @@
         <option value="Bombay">Bombay</option>
     </select> <br><br>
 
-        <input type="submit" name="enviar" id="enviar" value="Enviar">
+        <input type="button" name="enviar" id="enviar" value="Enviar">
 
     </fieldset>
 
 
 </form>
+    <span id="error">
+
+    </span>
 
 
 <script type="text/javascript" src="../js/lindogatito.js"></script>
+</main>
 </body>
 </html>

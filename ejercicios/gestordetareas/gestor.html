@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body id="body">
+<div id="formulario">
+
+    <form action="">
+        <fieldset>
+            <h2>Crear nueva actividad </h2>
+            <input type="text" name="nombreTarea" id="nombreTarea" placeholder="Nombre de la tarea">
+            <input type="text" name="modulo" id="modulo" placeholder="Modulo">
+            <input type="text" name="tarea" placeholder="Contenido de la tarea" id="contenido">
+            <input type="text" name="fecha" placeholder="Fecha: 23/11/2015" id="fecha" class="fechaHora">
+            <input type="text" name="hora" placeholder="Hora: 22:00"  id="hora" class="fechaHora"><br><br>
+            <input type="button" name="enviar" class="botonTarea" value="Enviar " id="enviar"><input type="button" name="cancelar" class="botonTarea" value="Cancelar" id="cancelar">
+            <br>
+            <br>
+        </fieldset>
+    </form>
+</div>
+
+<div id="formatoIncorrecto"></div>
+
+<header>
+    <h1>Gestor de tareas</h1>
+</header>
+
+<main>
+    <section id="porhacer">
+        <div class="cabezera">
+            Tareas por hacer:
+        </div>
+        <div class="divscroll" id="actividad">
+        <article>
+            Actividad HTML
+            <hr>
+            <h3>Modulo:</h3>DIWeb
+            <h3>Tarea:</h3>Lorem fistrum condemor tiene musho peligro apetecan. Te voy a borrar el cerito caballo blanco caballo negroorl ahorarr no puedor no te digo trigo por no llamarte Rodrigor no puedor <br>
+            <h3>Fecha de entrega:</h3>10/12/2015 - 20:10 <br>
+        </article>
+
+        </div>
+
+
+
+    </section>
+    <section id="enproceso">
+        <div class="cabezera">
+            Tareas en proceso:
+        </div>
+        <div class="divscroll">
+            <article>
+                Actividad HTML
+                <hr>
+                <h3>Modulo:</h3>DIWeb
+                <h3>Tarea:</h3>Lorem fistrum condemor tiene musho peligro apetecan. Te voy a borrar el cerito caballo blanco caballo negroorl ahorarr no puedor no te digo trigo por no llamarte Rodrigor no puedor <br>
+                <h3>Fecha de entrega:</h3>10/12/2015 - 20:10 <br>
+            </article>
+            <article>
+                Actividad HTML
+                <hr>
+                <h3>Modulo:</h3>DIWeb
+                <h3>Tarea:</h3>Lorem fistrum condemor tiene musho peligro apetecan. Te voy a borrar el cerito caballo blanco caballo negroorl ahorarr no puedor no te digo trigo por no llamarte Rodrigor no puedor <br>
+                <h3>Fecha de entrega:</h3>10/12/2015 - 20:10 <br>
+            </article>
+            <article>
+                Actividad HTML
+                <hr>
+                <h3>Modulo:</h3>DIWeb
+                <h3>Tarea:</h3>Lorem fistrum condemor tiene musho peligro apetecan. Te voy a borrar el cerito caballo blanco caballo negroorl ahorarr no puedor no te digo trigo por no llamarte Rodrigor no puedor <br>
+                <h3>Fecha de entrega:</h3>10/12/2015 - 20:10 <br>
+            </article>
+        </div>
+
+    </section>
+    <section id="finalizado">
+        <div class="cabezera">
+            Tareas finalizadas:
+        </div>
+
+        <div class="divscroll">
+            <article>
+                Actividad HTML
+                <hr>
+                <h3>Modulo:</h3>DIWeb
+                <h3>Tarea:</h3>Lorem fistrum condemor tiene musho peligro apetecan. Te voy a borrar el cerito caballo blanco caballo negroorl ahorarr no puedor no te digo trigo por no llamarte Rodrigor no puedor <br>
+                <h3>Fecha de entrega:</h3>10/12/2015 - 20:10 <br>
+            </article>
+            <article>
+                Actividad HTML
+                <hr>
+                <h3>Modulo:</h3>DIWeb
+                <h3>Tarea:</h3>Lorem fistrum condemor tiene musho peligro apetecan. Te voy a borrar el cerito caballo blanco caballo negroorl ahorarr no puedor no te digo trigo por no llamarte Rodrigor no puedor <br>
+                <h3>Fecha de entrega:</h3>10/12/2015 - 20:10 <br>
+            </article>
+            <article>
+                Actividad HTML
+                <hr>
+                <h3>Modulo:</h3>DIWeb
+                <h3>Tarea:</h3>Lorem fistrum condemor tiene musho peligro apetecan. Te voy a borrar el cerito caballo blanco caballo negroorl ahorarr no puedor no te digo trigo por no llamarte Rodrigor no puedor <br>
+                <h3>Fecha de entrega:</h3>10/12/2015 - 20:10 <br>
+            </article>
+        </div>
+
+
+
+    </section>
+    <section id="annadir">
+
+        <div id="boton"></div>
+    </section>
+
+
+
+    <div id="cargando" > <h1>Bienvenido</h1><br>
+        <h2>Cargando sus tareas, espere por favor.</h2></div>
+
+</main>
+<footer>Designed and developed by David Peralvo&copy;</footer>
+
+<script type="text/javascript" src="js/gestor.js"></script>
+</body>
+</html>
