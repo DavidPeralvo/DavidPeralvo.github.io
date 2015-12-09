@@ -1,0 +1,23 @@
+body{
+    background: #E8EAF6;
+    margin: 0;
+    padding: 0; }
+header{width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    height: 10%;
+    background: #3F51B5;}
+
+h1{
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    padding: 10px;}
+
+main{
+    margin-left: 20%;
+}
+#gatoInteraccion{
+
+}
+

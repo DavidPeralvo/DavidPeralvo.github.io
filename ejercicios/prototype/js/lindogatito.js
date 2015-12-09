@@ -26,8 +26,14 @@ function iniciar(){
         gato=new Gato(nombre,fecha,peso,raza);
         var ventanaGato=window.open("","");
         ventanaGato.document.open();
-        ventanaGato.document.write("");
-
+        ventanaGato.document.write("<html><head><meta charset='utf-8'> <title>"+ gato.nombre+"</title>" +
+            "<script  type='text/javascript' src='../js/lindogatito2.js'></script><link rel='stylesheet' href='../css/lindogatito.css'> </head>"+
+        "<header><h1>Información</h1></header><br> <main><div id='imagen'><img src='../img/gato.jpg' alt=''></div><div id='datos'>Hola mi nombre es "+gato.nombre+", mi raza es "+gato.raza+" y nací el "+gato.fecha+
+            "</div><span id='pesoGato'></span></div> <div id='gatoInteraccion'><div id='fotoestado' width='300px' height='300px'></div>"+
+            "<div id='comentario'></div></div> <div id='botonera'>"+
+            " <input type='button' id='jugar' value='jugar'><input type='button' id='comer' value='comer'>"+
+            "<input type='button' id='dormir' value='dormir'>  </div> </main></body></html>");
+        ventanaGato.document.close();
 
     }
     else{
@@ -70,7 +76,7 @@ function comprobarNombre(nombre){
 
 }
 function comprobarPeso(peso){
-    if(peso==""){
+    if(peso=="" || peso>15 || peso<1){
         return false;
     }
     else{
