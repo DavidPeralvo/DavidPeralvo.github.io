@@ -6,6 +6,17 @@ function Gato(nombre, raza, fecha, peso){
     this.fecha = fecha;
     this.peso = peso;
 }
+Gato.prototype.calcularEdad=function(){
+    if(gatoDEP){
+        document.getElementById('comentario').innerHTML="El gato "+this.nombre+" murio.";
+    }
+    else{
+   var fechaNacimientoGato=new Date(ano,mes,dia);
+    resta=new Date().getTime()-fechaNacimientoGato.getTime();
+    var edadgato=Math.floor(resta/(1000*60*60*24*365.25));
+    document.getElementById('comentario').innerHTML="La edad del gato es "+edadgato;}
+}
+
 
 Gato.prototype.gatoMuerto=function(){
     gatoDEP=true;
@@ -62,9 +73,9 @@ function nuevoGato(){
     var nombre= String(window.opener.document.getElementById('nombre').value.trim());
     var raza= window.opener.document.getElementById('raza').value;
     var peso= Number(window.opener.document.getElementById('peso').value.trim());
-    var ano=Number(window.opener.document.getElementById('ano').value.trim());
-    var mes= window.opener.window.document.getElementById('mes').value;
-    var dia= window.opener.window.document.getElementById('dia').value;
+    ano=Number(window.opener.document.getElementById('ano').value.trim());
+     mes= window.opener.window.document.getElementById('mes').value;
+     dia= window.opener.window.document.getElementById('dia').value;
 
     if(comprobarDatos(nombre,dia,mes,ano,peso)){
        var fecha=dia+"/"+mes+"/"+ano;
@@ -78,6 +89,9 @@ function nuevoGato(){
         } );
         document.getElementById('comer').addEventListener('click', function(){
             gato.comer();
+        } );
+        document.getElementById('edad').addEventListener('click', function(){
+            gato.calcularEdad();
         } );
 
     }

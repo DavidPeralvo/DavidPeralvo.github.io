@@ -32,7 +32,7 @@ function iniciar(){
             "</div><span id='pesoGato'></span></div> <div id='gatoInteraccion'><div id='fotoestado' width='300px' height='300px'></div>"+
             "<div id='comentario'></div></div> <div id='botonera'>"+
             " <input type='button' id='jugar' value='jugar'><input type='button' id='comer' value='comer'>"+
-            "<input type='button' id='dormir' value='dormir'>  </div> </main></body></html>");
+            "<input type='button' id='dormir' value='dormir'><input type='button' id='edad' value='Calcular edad'>  </div> </main></body></html>");
         ventanaGato.document.close();
 
     }
