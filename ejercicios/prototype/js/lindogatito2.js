@@ -121,6 +121,7 @@ function comprobarFecha(dia,mes,ano){
         return true
     }
 }
+
 function comprobarNombre(nombre){
     if(nombre==""){
         return false;

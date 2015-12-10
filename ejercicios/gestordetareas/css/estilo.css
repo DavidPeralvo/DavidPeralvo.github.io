@@ -169,9 +169,7 @@ article hr {
     width: 95%;
 }
 
-#formulario fieldset input:focus{
-    border-bottom: 2px solid #009688;
-}
+
 #formulario fieldset input:hover{
     border-bottom: 2px solid #009688;
 }
@@ -210,7 +208,20 @@ article hr {
     position: absolute;
     background: rgba(0,0,0,0.5);
 }
+#formulario form input{
+    transition: 1s;
+}
 
+#formulario form input:required{
+    border-bottom: 1px solid #9e9e9e;
+}
+#formulario form input:invalid{
+    border-bottom: 2px solid red;
+}
+#formulario form input:valid{
+    border-bottom: 2px solid green;
+
+}
 #error{
     padding-top: 5%;
     margin-top: 20%;
