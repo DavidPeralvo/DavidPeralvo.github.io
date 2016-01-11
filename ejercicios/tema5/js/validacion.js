@@ -2,12 +2,7 @@
 
 
 
-function validarDatos(){
 
-
-
-}
-function limpiarDatos(){}
 
 window.addEventListener("load",function(){
     var nombre=document.getElementById('nombre');
