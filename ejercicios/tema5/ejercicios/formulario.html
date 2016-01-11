@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <style type="text/css">
+        header{
+            padding: 0;
+            margin: 0;
+            height: 30%;
+            background: #607D8B;
+            color: white;
+        }
+        header h1{
+            margin: 0;
+            padding: 3%;
+        }
+        body{
+            font-family: sans-serif;
+            background: #ECEFF1;
+            margin: 0;
+            width: 100%;
+        }
+        fieldset{
+            background: #ffffff;
+            padding: 2%;
+            width: 30%;
+            margin: auto;
+            border-radius: 10%  ;
+        }
+        legend{
+            text-align: center;
+        }
+        .cajas{
+            margin-left: 4%;
+            width: 90%;
+            text-align: center;
+            border: none;
+            border-bottom: 1px solid #607D8B;
+            outline: none;
+
+
+        }
+        .botones{
+            width: 20%;
+            padding: 1%;
+            outline: none;
+            margin-left: 20%;
+            text-align: center;
+
+            border: 1px solid #607D8B;
+            border-radius: 5%;
+            background: #607D8B;
+            color: white;
+        }
+        .cajas:focus{
+            border-bottom: 3px  solid #607D8B;
+        }
+
+        .botones:hover{
+            background: #455A64;
+        }
+
+    </style>
+</head>
+<body>
+<header><h1>Validación de formulario</h1></header>
+<main>
+    <br><br>
+    <form action="" name="formulario"   >
+
+        <fieldset>
+            <legend>Rellene los datos</legend>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="cajas"><br><br>
+            <input type="text" name="apellido1" id="apellido1" placeholder="Primer apellido" class="cajas"><br><br>
+            <input type="text" name="apellido2" id="apellido2" placeholder="Segundo apellido" class="cajas"><br><br>
+            <input type="email" name="email" id="email" placeholder="Email: example@domains.com" class="cajas"><br><br>
+            <input type="text" name="dni" id="dni" placeholder="DNI: 99999999A" class="cajas"><br><br>
+            <input type="text" name="fecha" id="fecha" placeholder="Fecha válida: 01-01-2016" class="cajas"><br><br>
+            <input type="number" name="telefono" id="telefono" placeholder="Teléfono: 666555444" class="cajas"><br><br>
+            <input type="text" name="banco" id="banco" placeholder="NºCuenta: Entidad(4)-Oficina(4)-DC(2)-NºCuenta(10)" class="cajas"><br><br>
+            <input type="url" name="url" id="url" placeholder="Página web: http://www.web.es" class="cajas"><br><br>
+            Estudios:<br><input type="radio" name="titulo" value="Sin estudios" checked>Sin Estudios <br> <input type="radio" name="titulo" value="Obligatorios"> Obligatorios <br> <input type="radio" name="titulo" value="Superiores"> Superiores<br>  <input type="radio" name="titulo" value="Universidad"> Universidad
+
+            <br><br>
+            <input type="checkbox" name="terminos" id="condiciones" > Aceptar las condiciones generales.
+
+
+            <br><br>
+            <input type="button" id="enviar" value="Enviar" class="botones"  >
+
+
+        </fieldset>
+
+    </form>
+
+
+</main>
+<script type="text/javascript" src="../js/validacion.js"></script>
+</body>
+</html>
