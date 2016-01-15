@@ -6,7 +6,7 @@ body{
     text-align: center;
     width: 100%;
     height: 100%;
-    background:url("images/fondord.jpg")no-repeat center fixed;
+    background:url("images/fondord.jpg") center fixed;
     background-size: cover;
 
 
