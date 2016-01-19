@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilohome.css">
+    <script type="text/javascript" src="js/aloja.js"></script>
+    <title>Alojamiento</title>
+</head>
+<body>
+<img src="images/texturafondo.jpg" alt="" id="fondo">
+<div id="filtro" style=" display: none;">
+    <form action="">
+        <fieldset>
+            <h5>Reservar</h5>
+            Nombre: <input type="text"  placeholder="Nombre" required><br><br>
+            Apellido: <input type="text" placeholder="Apellido" required><br><br>
+            Email: <input type="email" placeholder="email@domains.com" required><br> <br>
+            Teléfono: <input type="tel" placeholder="999999999" required><br><br>
+            Numero de personas: <br>
+            <input type="range" min="1" max="30" step="1" id="range"> <input type="text" size="2"id="contador">
+            <br><br>
+            Fecha entrada: <input type="date" name="Entrada" required><br><br>
+            Fecha salida: <input type="date" name="Salida" required><br><br>
+            Forma de pago: <select name="" id="">
+            <option value="">Efectivo</option>
+            <option value="">Tarjeta</option>
+            <option value="">Paypal</option>
+        </select> <br><br>
+
+            <input type="submit" value="Reservar">
+
+
+
+        </fieldset>
+
+    </form>
+
+
+</div>
+<header>
+    <h1>Alojamiento Rural</h1>
+    
+    </nav>
+</header>
+
+<main>
+
+    <div id="buscador"><input type="text" placeholder="Buscador" > <input type="button" value="Buscar" class="botonbus"></div>
+    <section>
+
+        <article class="casa1">
+            <h2>Casa rural - Asturias</h2>
+            <div class="casa"> <img src="images/casarural.jpg" alt="" class="fotocasa">
+                <p class="descripcion"> <br>
+                    Lugar: Cangas
+                    <br>Habitaciones: 2
+                    <br>Nº de Personas: 6
+                    <br>Precio: 50€/noche
+                    <br>Valoracion: 6/10
+
+                    </p>
+
+                <hr>
+                <input type="button" value="Reserva ya" name="reserva">
+                <br><br>
+            </div>
+
+        </article>
+        <article class="casa2">
+            <h2>Casa rural - León</h2>
+            <div class="casa"> <img src="images/casa2.jpg" alt="" class="fotocasa">
+                <p class="descripcion"> <br>
+                    Lugar: Riogrande
+                    <br>Habitaciones: 1
+                    <br>Nº de Personas: 3
+                    <br>Precio: 50€/noche
+                    <br>Valoracion: 9/10
+
+                </p>
+
+                <hr>
+                <input type="button" value="Reserva ya" name="reserva">
+                <br><br>
+            </div>
+        </article>
+        <article class="casa3">
+            <h2>Casa rural - Jaen</h2>
+            <div class="casa"> <img src="images/casa3.jpg" alt="" class="fotocasa">
+                <p class="descripcion"> <br>
+                    Lugar: Linares
+                    <br>Habitaciones: 4
+                    <br>Nº de Personas: 8
+                    <br>Precio: 90€/noche
+                    <br>Valoracion: 3/10
+
+                </p>
+
+                <hr>
+                <input type="button" value="Reserva ya" name="reserva">
+                <br><br>
+            </div>
+        </article>
+        <article class="casa4">
+            <h2>Casa rural - Asturias</h2>
+            <div class="casa"> <img src="images/casa4.jpg" alt="" class="fotocasa">
+                <p class="descripcion"> <br>
+                    Lugar: Ribadesella
+                    <br>Habitaciones: 3
+                    <br>Nº de Personas: 6
+                    <br>Precio: 60€/noche
+                    <br>Valoracion:4/10
+
+                </p>
+
+                <hr>
+                <input type="button" value="Reserva ya">
+                <br><br>
+            </div>
+        </article>
+        <article class="casa5">
+            <h2>Casa rural - Galicia</h2>
+            <div class="casa"> <img src="images/casa5.jpg" alt="" class="fotocasa">
+                <p class="descripcion"> <br>
+                    Lugar: Ferrol
+                    <br>Habitaciones: 1
+                    <br>Nº de Personas: 2
+                    <br>Precio: 30€/noche
+                    <br>Valoracion: 4/10
+
+                </p>
+
+                <hr>
+                <input type="button" value="Reserva ya" name="reserva">
+                <br><br>
+            </div>
+        </article>
+        <article class="casa6">
+            <h2>Casa rural - Pirineos</h2>
+            <div class="casa"> <img src="images/casa6.jpg" alt="" class="fotocasa">
+                <p class="descripcion"> <br>
+                    Lugar: Boi Taül
+                    <br>Habitaciones: 3
+                    <br>Nº de Personas: 10
+                    <br>Precio: 150€/noche
+                    <br>Valoracion: 9/10
+
+                </p>
+
+                <hr>
+                <input type="button" value="Reserva ya" name="reserva">
+                <br><br>
+            </div>
+        </article>
+    </section>
+    <br><br>
+</main>
+<footer>Desarrollado por David Peralvo©</footer>
+</body>
+</html>
