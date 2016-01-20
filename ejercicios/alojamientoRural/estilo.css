@@ -53,11 +53,8 @@ header{
 
 
 
- @media screen and (min-width: 600px){
+ @media screen and (min-width: 413px){
      body{
-         background:url("images/fondord.jpg") center fixed no-repeat;
-         background-size: cover;
-
 
          font-size:12px;
 
@@ -76,10 +73,9 @@ header{
 
 
 
- @media screen and (min-width: 1200px){
+ @media screen and (min-width: 801px){
      body{
-         background:url("images/fondord.jpg") center fixed no-repeat;
-         background-size: cover;
+
          text-align: center;
 
 
