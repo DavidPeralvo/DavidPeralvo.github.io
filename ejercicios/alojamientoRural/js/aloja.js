@@ -5,7 +5,7 @@
     window.addEventListener("load",function(){
     document.getElementById("reserva").onclick=function(){
         document.getElementById('filtro').style.display="block";
-        document.getElementsByTagName("main").style.overflow="hidden";
+        document.getElementsByTagName("main").style.position='fixed';
     }
         document.getElementById('reservaok').onclick=function(){
             document.getElementById('filtro').style.display='none';
