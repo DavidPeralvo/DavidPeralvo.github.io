@@ -33,23 +33,17 @@ header{
     background: #4CAF50;
 
 }
-nav{
-    display: block;
-    float: right;
-}
-nav ul{
-
-    margin: 0;
-    padding-right:3%;
-    list-style: none;
-}
-li{
-
-display: inline-block;
-    line-height: 10%;
+.reserva{
+    background: #4CAF50;
+    color: white;
 
 }
+.reserva:hover{
+    background: #1B5E20;
+}
+
 article{
+    border-radius: 10px;
     background: white;
     margin-bottom: 0;
     margin-left: 3%;
@@ -97,6 +91,7 @@ section >#casa6{
 
 
 input   {
+
     outline: none;
     border-radius: 10px;
     border: 1px solid #4CAF50;
@@ -112,9 +107,7 @@ input   {
     background: white;
     color: #4CAF50;
 }
-.casa{
 
-}
 .fotocasa{
     float: left;
     width: 50%;
@@ -160,10 +153,10 @@ h2{
     }
     .descripcion{
         margin: 5%;
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     h2{
-        font-size: 1em;
+        font-size: 1.1em;
     }
     .fotocasa{
         width: 90%;
@@ -183,23 +176,49 @@ h2{
 
 
 /*----------------------------------------------------------Siguiente resolucion-----------------------------------*/
-@media screen and (min-width: 750px){
+@media screen and (min-width: 801px){
     body{
 
         height: 100%;
         width: 100%;
     }
+    header{
+        padding: 0;
+        height: 7%;
+    }
 
     h1{
-        font-size: 3em;
+        font-size: 2.5em;
         color: white;
         text-shadow: 2px 2px 2px black;
         width: 80%;
         text-align: center;
     }
+    article{
+        margin-left: 8%;
+        width: 20%;
+    }
+    input   {
+        font-size: 1em;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid #4CAF50;
+        padding: 1%;
+    }
+    .reserva{
+        padding: 2%;
+    }
+
     section{
+        padding: 0;
+        margin: 0 auto;
+       text-align: center;
         display: flex;
-        flex-flow:row ;
+        flex-flow:wrap ;
+    }
+    footer{
+        padding: 1%;
+        height: 2%;
     }
 
 
