@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estiloreserva.css">
+    <title>Alojamiento</title>
 </head>
 <body>
+<img src="images/texturafondo.jpg" alt="" id="fondo">
+<header>
+    <h1>Alojamiento Rural</h1>
 
-<div id="filtro" >
+</header>
+
+<div id="reserva" >
+
     <form action="">
         <fieldset>
-            <h5>Reservar</h5>
+            <legend>Reserva</legend>
             Nombre: <input type="text"  placeholder="Nombre" required><br><br>
             Apellido: <input type="text" placeholder="Apellido" required><br><br>
             Email: <input type="email" placeholder="email@domains.com" required><br> <br>
             Teléfono: <input type="tel" placeholder="999999999" required><br><br>
             Numero de personas: <br>
-            <input type="range" min="1" max="30" step="1" id="range"> <input type="text" size="2"id="contador">
+            <input type="range" min="1" max="30" step="1" id="range"> <input type="text" size="2"id="contador" value="0">
             <br><br>
             Fecha entrada: <input type="date" name="Entrada" required><br><br>
             Fecha salida: <input type="date" name="Salida" required><br><br>
@@ -25,7 +35,7 @@
             <option value="">Paypal</option>
         </select> <br><br>
 
-            <input type="submit" value="Reservar"  id="reservaok">
+            <input type="submit" value="Reservar"  > <input type="button" value="Volver">
 
 
 
