@@ -38,20 +38,20 @@ mostrar.addEventListener("click",function(){
 
 });
 
-function setCookie(cname, cvalue, exdays) {console.log(cvalue);
+function setCookie(nombre, valor, tiempo) {
     var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    d.setTime(d.getTime() + (tiempo*24*60*60*1000));
     var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
+    document.cookie = nombre + "=" + valor + "; " + expires;
 }
 
-function getCookie(cname) {
-    var name = cname + "=";
+function getCookie(nombre) {
+    var valor = nombre + "=";
     var ca = document.cookie.split(';');
     for(var i=0; i<ca.length; i++) {
         var c = ca[i];
         while (c.charAt(0)==' ') c = c.substring(1);
-        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+        if (c.indexOf(valor) == 0) return c.substring(valor.length,c.length);
     }
     return "";
 }
