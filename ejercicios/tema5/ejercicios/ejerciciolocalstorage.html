@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Storage</title>
+    <style>
+        body{
+            background: #E8EAF6;
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        header{
+            padding: 3%;
+            background: #3F51B5;
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        h3{text-align: center;
+            text-shadow: 1px 1px black;
+            color: #3F51B5;
+        }
+        section{
+            margin: 0 auto;
+        }
+        article{
+
+        }
+
+        fieldset{
+            margin: auto;
+            width:30%;
+        }
+    </style>
+    <script type="text/javascript" src="../js/localstorage.js"></script>
+</head>
+<body>
+<header>
+    <h1>
+        Practica:Almacenamiento
+    </h1>
+</header>
+<main>
+    <section>
+        <article>
+            <h3>Local Storage</h3>
+
+            <form action="">
+
+                <fieldset>
+                    <legend>Prueba de Local Storage</legend>
+
+                    Usuario: <input type="text" name="usuario" id="usuario"><br><br>
+                    Clave: <input type="text" name="clave" id="clave"><br><br>
+                    <input type="button" value="guardar" id="enviar"> <input type="button" value="Borrar local Storage" id="borrar">
+                    <input type="button"name="mostrar" id="ver" value="mostrar datos">
+
+
+                </fieldset>
+
+
+
+            </form>
+            <span id="caja"></span>
+        </article>
+    </section>
+
+</main>
+
+</body>
+</html>
