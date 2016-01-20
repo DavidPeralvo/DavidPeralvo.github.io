@@ -1,13 +1,4 @@
-img{
-    background-size: cover;
-}
-#fondo{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
+
 body{
     margin: 0;
     padding: 0;
@@ -15,7 +6,8 @@ body{
     text-align: center;
     width: 100%;
     height: 100%;
-
+    background:url("images/fondord.jpg") center fixed no-repeat;
+    background-size: cover;
 
 
 }
@@ -62,14 +54,9 @@ header{
 
 
  @media screen and (min-width: 600px){
-     img{
-         background-size: cover;
-     }
-     #fondo{
-
-     }
      body{
-
+         background:url("images/fondord.jpg") center fixed no-repeat;
+         background-size: cover;
 
 
          font-size:12px;
@@ -90,9 +77,6 @@ header{
 
 
  @media screen and (min-width: 1200px){
-     #fondo{
-         display: none;
-     }
      body{
          background:url("images/fondord.jpg") center fixed no-repeat;
          background-size: cover;
@@ -103,9 +87,14 @@ header{
 
 
      }
-
-     image:hover{
-         opacity: 1;
+     #efecto{
+         opacity: ;
+         width: 100%;
+         height: 100%;
+         position: absolute;
+     }
+     #efecto:hover{
+         background: r;
      }
 
      h1{
