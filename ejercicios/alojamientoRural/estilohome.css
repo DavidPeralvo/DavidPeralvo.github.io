@@ -139,7 +139,7 @@ h2{
     color: #4CAF50;
 }
 #filtro{
-
+    overflow: hidden;
     display: none;
     padding-top: 20%;
     width: 100%;
