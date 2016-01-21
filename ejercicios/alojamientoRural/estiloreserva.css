@@ -1,5 +1,6 @@
-html{
-    height: 100%;
+*{
+    margin: 0;
+    padding: 0;
 }
 body{
     margin: 0;
@@ -7,7 +8,7 @@ body{
     font-family: sans-serif;
     text-align: center;
     width: 100%;
-    height: 100%;
+
 }
 form{
     margin-top: 2%;
@@ -67,10 +68,15 @@ fieldset{
     border: 1px solid #4CAF50;
 }
 
+main{
+    padding: 5%;
+}
+
 
 /*----------------------------------------------------------Siguiente resolución-----------------------------------*/
 
-@media screen and (min-width: 413px){
+@media screen and (min-width: 410px){
+
 
     body{
         font-size: 1.5em;
