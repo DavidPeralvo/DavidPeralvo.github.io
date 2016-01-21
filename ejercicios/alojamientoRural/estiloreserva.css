@@ -25,7 +25,14 @@ footer{
     height: 100%;
     z-index: -1;
 }
-
+.boton{
+    border-radius: 10px;
+    color: white;
+    background: #4CAF50;
+}
+.boton:hover{
+    background: #1B5E20;
+}
 h1{font-family: 'Lobster', cursive;
     font-size: 1.1em;
     color: white;
@@ -40,11 +47,10 @@ header{
 
 }
 input   {
-
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #4CAF50;
-    padding: 1%;
+
 }
 h5{
     padding: 0;
@@ -54,6 +60,7 @@ legend{
     color: #4CAF50;
     text-shadow: 0px 1px black;
 }
+
 fieldset{
     text-align: center;
     font-size: 0.8em;
@@ -67,6 +74,10 @@ fieldset{
 
 main{
     padding: 5%;
+}
+label{
+    font-size: 0.8em;
+   margin-left: 1%;
 }
 
 
