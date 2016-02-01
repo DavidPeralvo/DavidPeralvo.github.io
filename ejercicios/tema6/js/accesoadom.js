@@ -2,7 +2,7 @@ window.addEventListener("load", function(){
     //Accede al elemento html
     var html=document.documentElement;
     //Accede al body mediante lastChild
-    var body=.lastChild;
+    var body=html.lastChild;
     //Accede al head mediante la lista childNodes
     var head=html.childNodes[0];
     //Averigua el número de hijos de body
