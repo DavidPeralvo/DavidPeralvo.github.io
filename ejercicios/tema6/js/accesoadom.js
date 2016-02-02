@@ -7,6 +7,7 @@ window.addEventListener("load", function(){
     var head=html.childNodes[0];
     //Averigua el número de hijos de body
     var hijosb=document.getElementsByTagName("body")[0].childNodes.length;
+    console.log(hijosb);
     //Añádele un párrafo con el texto "Hola a todos"
     var parrafo=document.createElement("p");
     var rellenarparrafo=document.createTextNode("Hola a todos");
