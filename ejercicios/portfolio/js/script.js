@@ -8,5 +8,9 @@ $(document).ready(function(){
         $("html, body").animate({
             scrollTop: posicion
         }, 1500);
+        $('header').css("display","block");
+
+
+
     });
 });
