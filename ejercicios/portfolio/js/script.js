@@ -13,4 +13,10 @@ $(document).ready(function(){
 
 
     });
+    $("#flecha2").on("click", function() {
+        var posicion = $("#conocimientos").offset().top;
+        $("html, body").animate({
+            scrollTop: posicion
+        }, 1500);
+    });
 });
