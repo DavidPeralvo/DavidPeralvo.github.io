@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>universitario</title>
+    <script type="text/javascript" src="js/universitario.js"></script>
+    <style type="text/css">
+        body{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        header{
+            width: 100%;
+            height: 30%;
+            background: steelblue;
+        }
+        h1{
+            color: white;
+            margin: 0;
+            padding: 3%;
+        }
+        form{
+            text-align: center;
+        }
+        fieldset{
+            text-align: left;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: auto;
+            width: 30%;
+        }
+        span{
+            color: red;
+        }
+        input{
+            border:1px solid gray;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<header><h1>Alta universitario</h1></header>
+
+<form action="">
+    <fieldset>
+        <legend>Nuevo universitario</legend>
+        <br>
+        Nombre <input type="text" name="nombre" placeholder="Nombre" id="nombre"><br><br>
+        Primer apellido <input type="text" name="apellido1" placeholder="Primer apellido" id="apellido1"><br><br>
+        Segundo apellido <input type="text" name="apellido2" placeholder="Segundo apellido" id="apellido2"><br><br>
+        Fecha de Nacimiento <input type="text" name="fecha" placeholder="dd-mm-aaaa" id="fecha"><br><br>
+
+    </fieldset>
+    <input type="checkbox" name="acepto" id="condiciones">Acepto las condiciones. <br><br><span id="errcondiciones"></span><br>
+    <input type="button" name="enviar" value="Crear" id="enviar"><input type="reset" name="borrar" id="borrar">
+
+</form>
+
+</body>
+</html>
