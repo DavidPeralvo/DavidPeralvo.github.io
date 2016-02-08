@@ -24,6 +24,7 @@ margin: 0;
 
 }
 #quiensoy h1{
+    margin: auto;
     font-family: 'Lobster', cursive;
 }
 #quiensoy p{
