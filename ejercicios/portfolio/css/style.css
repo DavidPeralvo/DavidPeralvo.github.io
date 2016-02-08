@@ -26,6 +26,10 @@ margin: 0;
 #quiensoy h1{
     font-family: 'Lobster', cursive;
 }
+#quiensoy p{
+    padding: 3%;
+    text-align: justify;
+}
 
 
 #conocimientos{
