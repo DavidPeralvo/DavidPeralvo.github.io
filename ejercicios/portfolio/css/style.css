@@ -2,11 +2,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 html{
-    overflow: hidden;
+
     width: 100%;
     height: 100%;
 }
 body{
+    overflow: hidden;
 margin: 0;
     padding: 0;
 }
@@ -33,10 +34,20 @@ margin: 0;
 }
 
 
+
 #conocimientos{
+    text-align: center;
     position: absolute;
     top:200%;
-    background: white;
+    background: url("../img/contacto.jpg") no-repeat center;
+    background-size: cover;
+}
+#conocimientos h1{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Lobster', cursive;
+
 }
 article{
     padding: 2%;

@@ -24,4 +24,10 @@ $(document).ready(function(){
             scrollTop: posicion
         }, 1500);
     });
+    $("#flecha4").on("click", function() {
+        var posicion = $("#quiensoy").offset().top;
+        $("html, body").animate({
+            scrollTop: posicion
+        }, 1500);
+    });
 });
