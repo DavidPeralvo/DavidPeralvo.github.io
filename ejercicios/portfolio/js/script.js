@@ -4,17 +4,16 @@
 
 $(document).ready(function(){
     $("#flecha").on("click", function(){
-        var posicion = $("#cabezera").offset().top;
+        var posicion = $("#quiensoy").offset().top;
         $("html, body").animate({
             scrollTop: posicion
         }, 1500);
-        $('header').css("display","block");
 
 
 
     });
     $("#flecha2").on("click", function() {
-        var posicion = $("#conocimientos").offset().top;
+        var posicion = $("#intro").offset().top;
         $("html, body").animate({
             scrollTop: posicion
         }, 1500);
