@@ -28,8 +28,11 @@ margin: 0;
     margin: auto;
     font-family: 'Lobster', cursive;
 }
+#quiensoy img{
+    margin-top: 5%;
+}
 #quiensoy p{
-    padding: 3%;
+    padding: 5%;
     text-align: justify;
 }
 
@@ -222,6 +225,9 @@ header{
     0% {left:0; top:100%;}
     100% {left:0; top:110%;}
 }
+#angle3{
+    margin-top: 15%;
+}
 #intro h3 {
     font-family: 'Lobster', cursive;
     text-shadow: 2px 2px 10px black;
@@ -255,7 +261,7 @@ header{
 
 }
 
-@media screen and (min-width: 801px){
+@media screen and (min-width: 799px){
 
 
     #intro h1{
@@ -265,12 +271,31 @@ header{
         font-size: 4em;
     }
     #texto{
-        margin-top: 30%;
+        margin-top: 20%;
+
 
     }
     #flecha{
+        width: 7%;
+        height: 7%;
+    }
+
+    #contactologos{
+        padding: 0;
+    }
+    #contactologos img{
         width: 10%;
         height: 10%;
+    }
+
+    #quiensoy img{ height: 30%;
+    width: 20%}
+
+    #quiensoy{
+        font-size: 1.7em;
+    }
+    #quiensoy p{
+        margin: 0;
     }
 
 
