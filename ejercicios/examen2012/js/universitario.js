@@ -34,12 +34,7 @@ function comprobarFecha(fecha){
             }
             else {
                 fecha.style.border="1px solid gray";
-                return true;
-
-            }
-        }
-
-    }
+                return true;}}}
     else{
         fecha.style.border = "1px solid red";
         return false;
@@ -82,7 +77,6 @@ function mostrarCookie(nombre,apellido1,apellido2,fecha){
     var cookieapellido1=getCookie('apellido1');
     var cookieapellido2=getCookie('apellido2');
     var cookiefecha=getCookie('fecha');
-    console.log(cookienombre);
     nombre.value=cookienombre;
     apellido1.value=cookieapellido1;
     apellido2.value=cookieapellido2;
@@ -151,5 +145,6 @@ window.addEventListener("load",function(){
 
 
     });
+
 
 });

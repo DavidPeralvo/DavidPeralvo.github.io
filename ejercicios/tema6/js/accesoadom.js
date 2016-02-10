@@ -26,4 +26,5 @@ window.addEventListener("load", function(){
     body.insertBefore(lista,body.childNodes[0]);
     // Elimina el último párrafo del documento original ("párrafo DOM 3");
     body.removeChild(body.childNodes[body.childNodes.length - 3]);
+
 });

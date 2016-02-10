@@ -131,6 +131,8 @@ function comprobarNombre(nombre){
     }
 
 }
+
+
 function comprobarPeso(peso){
     if(peso=="" || peso>15 || peso<1){
         return false;
@@ -144,3 +146,4 @@ window.addEventListener("load",function(){
         nuevoGato();
 
 });
+
