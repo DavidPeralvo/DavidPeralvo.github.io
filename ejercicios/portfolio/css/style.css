@@ -45,6 +45,8 @@ p{
 
 
 #contacto{
+    width: 100%;
+    height: 100%;
     text-align: center;
     position: absolute;
     top:200%;
@@ -239,10 +241,15 @@ header{
         margin-top: 40%;
 
     }
+    #quiensoy p{
+        margin: 0;
+        font-size: 1.6em;
 
 
 
 }
+    #quiensoy img{ height: 20%;
+        width: 20%}
 
 @media screen and (min-width: 799px){
 
@@ -280,7 +287,7 @@ header{
     width: 20%}
 
     #quiensoy{
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     #quiensoy p{
         margin: 0;
