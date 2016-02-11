@@ -30,4 +30,25 @@ $(document).ready(function(){
             scrollTop: posicion
         }, 1500);
     });
+
+    $("#twitter").on("click",function(){
+        window.location="https://www.twitter.com/peralvo_93";
+    });
+    $("#facebook").on("click",function(){
+        window.location="https://www.facebook.com/davidperalvo";
+    });
+    $("#google").on("click",function(){
+        window.location="https://plus.google.com/101977406332373158070";
+    });
+    $("#email").on("click",function(){
+        window.location.href = "mailto:davidperalvo@gmail.com";
+    });
+    $("#github").on("click",function(){
+        window.location.href = "https://github.com/DavidPeralvo/";
+    });
+    $("#linkedin").on("click",function(){
+        window.location.href = "https://es.linkedin.com/in/david-peralvo-1962b8a4";
+    });
+
+
 });
