@@ -19,7 +19,7 @@ $(document).ready(function(){
         }, 1500);
     })
     $("#flecha3").on("click", function() {
-        var posicion = $("#conocimientos").offset().top;
+        var posicion = $("#contacto").offset().top;
         $("html, body").animate({
             scrollTop: posicion
         }, 1500);
