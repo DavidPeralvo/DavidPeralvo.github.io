@@ -2,19 +2,101 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript"src="./js/jquery-2.2.0.js"></script>
-    <script ></script>
-    <title>Ejemplos</title>
+    <title>Ejercicio 1</title>
+    <script type="text/javascript" src="./js/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <script type="text/javascript" src="./js/ejercicio1.js"></script>
+    <link rel="stylesheet" href="./flick/jquery-ui.css">
+    <link rel="stylesheet" href="./flick/theme.css">
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0e0e0;
+        }
+        p{text-align: justify}
+        #tabs{
+            width: 40%;
+            margin: auto;
+            margin-top:5%;
+        }
+        header{
+            height: 20%;
+            background: #0073ea;
+        }
+        h1{
+            color: white;
+            margin: 0;
+            padding: 3%;
+        }
+        #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+        #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+        #sortable li span { position: absolute; margin-left: -1.3em; }
+
+    </style>
 </head>
 <body>
-<header> <h1>JQuery UI</h1></header>
-<main>
+<header>
+    <h1> Ejemplo JQuery UI</h1>
+</header>
+
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tab1">Fecha</a></li>
+        <li><a href="#tab2">Tooltip</a></li>
+        <li><a href="#tab3">Sorteable</a></li>
+    </ul>
+
+    <div id="tab1"><p>Fecha: <input type="text" id="datepicker" size="30"></p><p>
+        He usado el componente datapicker para la muestra de un calendario al hacer click en el campo de texto. Podemos encontrar este recurso de jquery en siguiente
+        <a href="http://jqueryui.com/datepicker/">enlace</a>.</p>
+        <p> Para poder realizar este datapicker ha sido necesario este código:
+        <blockquote>
+            $.datepicker.setDefaults($.datepicker.regional['es']);
+            $(function() {
+            $( "#datepicker" ).datepicker();
+            });
+        </blockquote></p></div>
+    <div id="tab2"><p><a href="#" title="Esto es un ejemplo de Tooltips">Lorem fistrum</a> no te digo trigo por no llamarte Rodrigor a peich a gramenawer pupita ese hombree va usté muy cargadoo a gramenawer fistro. Fistro qué dise usteer al ataquerl no te digo trigo por no llamarte Rodrigor. Mamaar benemeritaar pecador la caidita fistro ese que llega a peich fistro.</p>
+        <p>Este componente se llama tooltips en el cual al pasar el raton por encima del enlace nos proporciona información que se aloja en el tittle de la etiqueta a . Para encontrar este recurso jquery hacer click en este
+            <a href="http://jqueryui.com/tooltip/">enlace</a>.</p>
+        <p> Para poder realizar este tooltips ha sido necesario este código:
+        <blockquote>
+            $(function() {
+            $( document ).tooltip();
+            });
+        </blockquote></p></div>
+    <div id="tab3">
+
+        <ul id="sortable">
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Java</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>PHP</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>C</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>C++</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Objetive-C</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Cobol</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Javascript</li>
+        </ul>
+        <p>Este componente se llama sortable en el cual nos permite recolocar los li de una lista . Para encontrar este recurso jquery hacer click en este
+            <a href="http://jqueryui.com/sortable/">enlace</a>.</p>
+        <p> Para poder realizar este sorteable ha sido necesario este código:
+        <blockquote>
+            $(function() {
+            $( "#tabs" ).tabs();});
+            $(function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();});
+        </blockquote></p>
+    </div>
+
+
+</div>
 
 
 
 
-
-</main>
 
 </body>
 </html>
