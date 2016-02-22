@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>David Peralvo Gomez</title>
+    <script type="text/javascript" src="js/script.js"></script>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        fieldset{
+            margin: auto;
+            width: 40%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        span{
+            color: red;
+        }
+        #nuevousuario{
+            text-align: center;
+        }
+        header{
+            height: 20%;
+            width: 100%;
+            background: steelblue;
+        }
+        header h1{
+            margin: 0;
+            padding: 3%;
+            color: white;
+        }
+        form{
+            margin-top: 2%;
+        }
+
+    </style>
+</head>
+<body>
+<header><h1>Examen Febrero</h1></header>
+<noscript>El navegador tiene javascript activado</noscript>
+<main>
+    <form action="">
+        <fieldset>
+            <legend>Alta Usuario</legend>
+            Nombre: <input type="text" placeholder="Nombre" id="nombre"><span id="errornombre"></span><br><br>
+            Primer apellido: <input type="text" placeholder="1º Apellido" id="apellido1"><span id="errorapellido1"></span><br><br>
+            Segundo apellido: <input type="text" placeholder="2º Apellido" id="apellido2"><span id="errorapellido2"></span><br><br>
+            DNI: <input type="text" placeholder="99999999A" id="dni"><span id="errordni"></span><br><br>
+            Sexo: <select name="sexo" id="sexo">
+            <option value="Hombre" selected >Hombre</option>
+            <option value="Mujer">Mujer</option>
+        </select><span id="errorsexo"></span>
+            <br><br>
+            <input type="checkbox" id="condicion"> Acepto las condiciones. <br><br>
+            <span id="errcondicion"></span><br>
+            <input type="button" value="Nuevo Usuario" id="nuevo"> <input type="reset" value="Limpiar" id="limpiar">
+        </fieldset>
+
+    </form>
+
+    <div id="nuevousuario">
+        Nombre:<br>
+        Apellidos:<br>
+        Sexo:
+
+    </div>
+    <br><br>
+    <h1>Lista de usuarios</h1>
+    <ul id="lista"></ul>
+
+</main>
+
+</body>
+</html>
