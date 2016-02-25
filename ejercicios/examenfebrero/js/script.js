@@ -52,6 +52,7 @@ window.addEventListener("load",function (){
         errornombre.innerHTML="";
         errordni.innerHTML="";
         errorsexo.innerHTML="";
+        errortotal.innerHTML="";
         nuevousuario.innerHTML="Nombre:<br>Apellidos:<br>Sexo:";
 
 
