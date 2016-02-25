@@ -25,23 +25,17 @@
     <form action="">
         <fieldset>
             <legend>Reserva</legend>
-            <label for="">Nombre:</label>  <input type="text"  placeholder="Nombre" required id="nombre"><span id="errornombre"></span><br><br>
-            <label for="">1º apellido:</label>  <input type="text" placeholder="1º Apellido" required id="apellido1"><span id="errorapellido1"></span><br><br>
-            <label for="">2º apellido:</label>  <input type="text" placeholder="2º Apellido" required id="apellido2"><span id="errorapellido2"></span><br><br>
-            <label for="">Email:</label>  <input type="email" placeholder="email@domains.com" required id="email"><span id="erroremail"></span><br><br>
-            <label for="">Teléfono:</label>  <input type="tel" placeholder="999999999" required id="telefono"><span id="errortelefono"></span><br><br>
+            <label for="">Nombre:</label>  <input type="text"  placeholder="Nombre"  id="nombre"><span id="errornombre"></span><br><br>
+            <label for="">1º apellido:</label>  <input type="text" placeholder="1º Apellido"  id="apellido1"><span id="errorapellido1"></span><br><br>
+            <label for="">2º apellido:</label>  <input type="text" placeholder="2º Apellido"  id="apellido2"><span id="errorapellido2"></span><br><br>
+            <label for="">Email:</label>  <input type="email" placeholder="email@domains.com"  id="email"><span id="erroremail"></span><br><br>
+            <label for="">Teléfono:</label>  <input type="tel" placeholder="999999999"  id="telefono"><span id="errortelefono"></span><br><br>
             <label for="">Nº personas: </label>  <input type="number" size="2" placeholder="0" id="personas"><span id="errorpersonas"></span><br><br>
-            <label for="">Fecha entrada:</label>  <input type="text" name="Entrada" required id="fechaentrada"><span id="errorfechaentrada"></span><br><br>
-            <label for="">Fecha salida:</label>  <input type="text" name="Salida" required id="fechasalida"><span id="errprfechasalida"></span><br><br>
-            Mensaje: <br>
-            <textarea></textarea><br><br>
-            Forma de pago: <select name="" id="">
-            <option value="">Efectivo</option>
-            <option value="">Tarjeta</option>
-            <option value="">Paypal</option>
-        </select> <br><br>
+            <label for="">Fecha entrada:</label>  <input type="text" name="Entrada"  id="fechaentrada" READONLY><span id="errorfechaentrada"></span><br><br>
+            <label for="">Fecha salida:</label>  <input type="text" name="Salida"  id="fechasalida" READONLY><span id="errprfechasalida"></span><br><br>
+            <input type="checkbox" id="acepto"><label for="">Acepto las condiciones</label><br><span id="errcondiciones"></span><br><br>
 
-            <input type="submit" value="Reservar"  class="boton"> <a href="home.html"><input type="button" value="Volver" class="boton"></a>
+            <input type="submit" value="Reservar"  class="boton" id="reservar"> <a href="home.html"><input type="button" value="Volver" class="boton"></a>
 
 
 

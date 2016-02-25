@@ -17,7 +17,7 @@ window.addEventListener("load",function (){
     var errorsexo=document.getElementById('errorsexo');
     var lista=document.getElementById('lista');
     var errortotal=document.getElementById('errorfinal');
-    var mensajeErrorNombre="*Error en Nombre";
+    var mensajeErrorNombre="*Mínimo de 4 caracteres, números o letras (mayúsculas o minúsculas), guiones o subrayados.";
     var mensajeErrorApellidos="*Error apellido vacio";
     var mensajeErrorDni="*Error DNI vacio";
     var mensajeErrorSexo="*Elige sexo porfavor";
