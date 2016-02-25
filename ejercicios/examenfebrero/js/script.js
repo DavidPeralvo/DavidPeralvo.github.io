@@ -16,6 +16,7 @@ window.addEventListener("load",function (){
     var errordni=document.getElementById('errordni');
     var errorsexo=document.getElementById('errorsexo');
     var lista=document.getElementById('lista');
+    var errortotal=document.getElementById('errorfinal');
     var mensajeErrorNombre="*Error en Nombre";
     var mensajeErrorApellidos="*Error apellido vacio";
     var mensajeErrorDni="*Error DNI vacio";
@@ -58,8 +59,7 @@ window.addEventListener("load",function (){
 
     nuevo.addEventListener('click',function (event){
         event.preventDefault();
-        if(validarcondicion(condicion)){
-            errorcondicion.innerHTML="";
+            errortotal.innerHTML="";
             if(validarCampos()){
                 var usuario=new Usuario(nombre.value,apellido1.value,apellido2.value,dni.value,sexo.value);
                 usuario.mostrar();
@@ -67,12 +67,10 @@ window.addEventListener("load",function (){
                 cargarCookies(nombre,apellido1,apellido2,dni,sexo);
             }
             else{
-                errorcondicion.innerHTML="* Compruebe los datos introducidos";
+                errortotal.innerHTML="* Compruebe los datos introducidos";
             }
-        }
-        else{
-            errorcondicion.innerHTML="* Debes aceptar las condiciones";
-        }
+
+
     });
 
     function Usuario(nombre,apellido1,apellido2,dni,sexo){
@@ -111,6 +109,9 @@ window.addEventListener("load",function (){
             validaciónfinal=false
         }
         if(validarSexo(sexo)==false){
+            validaciónfinal=false;
+        }
+        if(validarcondicion(condicion)==false){
             validaciónfinal=false;
         }
         return validaciónfinal;
