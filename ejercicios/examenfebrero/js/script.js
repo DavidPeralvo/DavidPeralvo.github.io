@@ -21,7 +21,7 @@ window.addEventListener("load",function (){
     var mensajeErrorApellidos="*Error apellido vacio";
     var mensajeErrorDni="*Error DNI vacio";
     var mensajeErrorSexo="*Elige sexo porfavor";
-    var regExpNombre=/[\wáéíóúÁÉÍÓÚñÑ-]{4}/;
+    var regExpNombre=/^[\wáéíóúÁÉÍÓÚñÑ-]{4,}$/;
     var regExpApellidos=/^(\w)+$/;
     var regExpDni=/^(\d){8}[A-Za-z]{1}$/;
 
@@ -59,7 +59,7 @@ window.addEventListener("load",function (){
     });
 
     nuevo.addEventListener('click',function (event){
-        event.preventDefault();
+
             errortotal.innerHTML="";
             if(validarCampos()){
                 var usuario=new Usuario(nombre.value,apellido1.value,apellido2.value,dni.value,sexo.value);
@@ -101,6 +101,7 @@ window.addEventListener("load",function (){
             validaciónfinal=false;
         }
         if(validar(apellido1,errorapellido1,regExpApellidos,mensajeErrorApellidos)==false){
+            validaciónfinal=false;
 
         }
         if(validar(apellido2,errorapellido2,regExpApellidos,mensajeErrorApellidos)==false){

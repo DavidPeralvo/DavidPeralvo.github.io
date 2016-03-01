@@ -6,12 +6,12 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estiloreserva.css">
-    <link rel="stylesheet" href="css/jquery-ui.css" >
-    <link rel="stylesheet" href="css/jquery-ui.structure.css" >
-    <link rel="stylesheet" href="css/jquery-ui.theme.css" >
+    <link rel="stylesheet" href="js/jquery-ui.css" >
+    <link rel="stylesheet" href="js/theme.css" >
     <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/reserva.js"></script>
+    <script type="text/javascript" src="js/jquery-cookie.js"></script>
     <title>Alojamiento</title>
 </head>
 <body>
@@ -25,15 +25,15 @@
     <form action="">
         <fieldset>
             <legend>Reserva</legend>
-            <label for="">Nombre:</label>  <input type="text"  placeholder="Nombre"  id="nombre"><span id="errornombre"></span><br><br>
-            <label for="">1º apellido:</label>  <input type="text" placeholder="1º Apellido"  id="apellido1"><span id="errorapellido1"></span><br><br>
-            <label for="">2º apellido:</label>  <input type="text" placeholder="2º Apellido"  id="apellido2"><span id="errorapellido2"></span><br><br>
-            <label for="">Email:</label>  <input type="email" placeholder="email@domains.com"  id="email"><span id="erroremail"></span><br><br>
-            <label for="">Teléfono:</label>  <input type="tel" placeholder="999999999"  id="telefono"><span id="errortelefono"></span><br><br>
-            <label for="">Nº personas: </label>  <input type="number" size="2" placeholder="0" id="personas"><span id="errorpersonas"></span><br><br>
-            <label for="">Fecha entrada:</label>  <input type="text" name="Entrada"  id="fechaentrada" READONLY><span id="errorfechaentrada"></span><br><br>
-            <label for="">Fecha salida:</label>  <input type="text" name="Salida"  id="fechasalida" READONLY><span id="errprfechasalida"></span><br><br>
-            <input type="checkbox" id="acepto"><label for="">Acepto las condiciones</label><br><span id="errcondiciones"></span><br><br>
+            <label for="nombre">Nombre:</label>  <input type="text"  placeholder="Nombre"  id="nombre" class="campo"><span id="errornombre"></span><br><br>
+            <label for="apellido1">1º apellido:</label>  <input type="text" placeholder="1º Apellido"  id="apellido1"class="campo"><span id="errorapellido1"></span><br><br>
+            <label for="apellido2">2º apellido:</label>  <input type="text" placeholder="2º Apellido"  id="apellido2"class="campo"><span id="errorapellido2"></span><br><br>
+            <label for="email">Email:</label>  <input type="email" placeholder="email@domains.com"  id="email"class="campo"><span id="erroremail"></span><br><br>
+            <label for="telefono">Teléfono:</label>  <input type="tel" placeholder="999999999"  id="telefono"class="campo"><span id="errortelefono"></span><br><br>
+            <label for="personas">Nº personas: </label>  <input type="number" size="2" placeholder="0" id="personas"><span id="errorpersonas"></span><br><br>
+            <label for="fechaentrada">Fecha entrada:</label>  <input type="text" name="Entrada"  id="fechaentrada" READONLY><span id="errorfechaentrada"></span><br><br>
+            <label for="fechasalida">Fecha salida:</label>  <input type="text" name="Salida"  id="fechasalida" READONLY><span id="errorfechasalida"></span><br><br>
+            <input type="checkbox" id="acepto"><label for="acepto">Acepto las condiciones</label><br><span id="errcondiciones"></span><br><br>
 
             <input type="submit" value="Reservar"  class="boton" id="reservar"> <a href="home.html"><input type="button" value="Volver" class="boton"></a>
 

@@ -28,10 +28,12 @@ $(document).ready(function(){
     var mensajeErrorPersonas="*El dato debe ser numerico";
     var mensajeErrorFechas="*Formato erroneo";
     var mensajeErrorCondicion="*Debes aceptar las condiciones";
-    var regExpTexto=/[\w]{3,}/;
-    var regExpEmail=/^\w+([\-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+    var regExpTexto=/^[\w]{3,}$/;
+    var regExpEmail=/^\w+([\.\-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     var regExpTelefono=/[\d]{9}/;
     var regExpPersonas=/[\d]{1,}/;
+
+
 
     nombre.on("blur",function(){validar(nombre,errornombre,regExpTexto,mensajeErrortexto);});
     apellido1.on("blur",function(){validar(apellido1,errorapellido1,regExpTexto,mensajeErrortexto)});
@@ -42,16 +44,40 @@ $(document).ready(function(){
     condicion.on("blur",function(){validarCondiciones(condicion,condicionError,mensajeErrorCondicion)});
     reservar.on("click",function(evento){
         evento.preventDefault();
-        if(validacionFinal==false){
+        if(validacionFinal()){
             window.alert("Reserva realizada con exito");
-
+            setCookie(nombre,apellido1,apellido2,email,telefono,fechaentrada,fechasalida,personas);
         }
-        else{
-            window.alert("Reserva erronea");
 
-        }
 
     });
+
+    function cargarCookies(){
+        nombre.val($.cookie("nombre"));
+        apellido1.val($.cookie("apellido1"));
+        apellido2.val($.cookie("apellido2"));
+        email.val($.cookie("email"));
+        telefono.val($.cookie("telefono"));
+        fechaentrada.val($.cookie("fechaentrada"));
+        fechasalida.val($.cookie("fechasalida"));
+        personas.val($.cookie("personas"));
+    }
+    function setCookie(nombre,apellido1,apellido2,email,telefono,fechaentrada,fechasalida,personas){
+        $.cookie.default={
+            expires:365
+        };
+        $.cookie("nombre",nombre.val());
+        $.cookie("nombre",nombre.val());
+        $.cookie("apellido1",apellido1.val());
+        $.cookie("apellido2",apellido2.val());
+        $.cookie("email",email.val());
+        $.cookie("telefono",telefono.val());
+        $.cookie("fechaentrada",fechaentrada.val());
+        $.cookie("fechasalida",fechasalida.val());
+        $.cookie("personas",personas.val());
+    }
+
+cargarCookies();
    fechaentrada.datepicker({
        minDate: '0',
         defaultDate: "today",
@@ -93,7 +119,7 @@ $(document).ready(function(){
         if(validarFecha(fechaentrada,errorfechaentrada)==false){
             resultado=false;
         }
-        if(validarFecha(fechasalida,errorapellido2)==false){
+        if(validarFecha(fechasalida,errorfechasalida)==false){
             resultado=false;
         }
         if(validarCondiciones(condicion,condicionError,mensajeErrorCondicion)==false){
@@ -112,6 +138,7 @@ $(document).ready(function(){
             return false;
         }
         if((patron.test(valor))==false){
+            campo.css("border-color","red");
            error.text(mensaje);
             return false;
         }
@@ -120,7 +147,7 @@ $(document).ready(function(){
 
     function validarCondiciones(campo,error,mensaje){
         error.text("");
-        if(campo.prop('checked')){
+        if(campo.prop('checked')==true){
             return true;
         }
         else{
@@ -132,8 +159,9 @@ $(document).ready(function(){
 
     function validarFecha(fecha,error){
        var valor=fecha.val().trim();
+        error.text("");
 
-        var campoVacio="*Campo vacio"
+        var campoVacio="*Campo vacio";
         if(fecha.val().length==0){
             error.text(campoVacio);
             return false;
@@ -143,9 +171,6 @@ $(document).ready(function(){
 
 
     }
-
-
-
 
 
 });
