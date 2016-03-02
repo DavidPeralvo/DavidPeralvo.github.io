@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/documentacion.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0e0e0;
+        }
+        p{text-align: justify}
+
+        header{
+            height: 20%;
+            background: #0073ea;
+        }
+        h1{
+            color: white;
+            margin: 0;
+            padding: 3%;
+        }
+        #tabs{
+            width: 70%;
+            margin: auto;
+            margin-top:5%;
+        }
+    </style>
+    <title>Documentacion</title>
+</head>
+<body>
+<header>
+ <h1>Documentacion</h1>
+</header>
+<main>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab1">Javascript Activo</a></li>
+            <li><a href="#tab2">Cookie Activo</a></li>
+            <li><a href="#tab3">Efecto inicial</a></li>
+            <li><a href="#tab4">Efecto nombre</a></li>
+            <li><a href="#tab5">LightBox</a></li>
+            <li><a href="#tab6">Validacion</a></li>
+            <li><a href="#tab7">Fechas</a></li>
+            <li><a href="#tab8">JQueryUI</a></li>
+        </ul>
+        <div id="tab1">
+            <h2>JavaScript activo</h2><br>
+            <p>Para saber si tenemos o no activado javascript en nuesto navegador se ha usado la etiqueta noscript como podemos apreciar en la imagen
+            </p>
+                <br><img src="images/documentacion/captura1.png" alt="captura1"><br>
+           <p> Cuando el se detecta que el javascript esta desconectado nos aparece esta imagen de error junto a un enlace para poder saber como activarlo.
+            </p>
+        </div>
+        <div id="tab2">
+            <h2>Cookie activo</h2><br>
+            <p>Para conocer si tenemos las cookies activas o no necesitamos crear usar javascript. En este caso hemos usado la siguiente condicion para que sea posible.
+            </p><br><img src="images/documentacion/captura2.png" alt="captura2"><br>
+            <p>Si las cookies estan desactivadas aparece un dialogo indicando que es recomendable para el buen uso de la pagina el uso de cookie.
+            Para mostrar el mensaje he utilizado el dialogo usando jquery ui.</p>
+        </div>
+        <div id="tab3">
+            <h2>Efecto inicial</h2>
+            <p>Para el efecto inicial he usado un efecto creado con JQuery.</p><br>
+            <img src="images/documentacion/captura3.png" alt="captura3"><br>
+            <p>El efecto se basa en el paso de imagenes, la imagen casa hace 1 segundo espera y tras esto se desplaza hacia arriba hasta que desaparece durante 2 segundos</p>
+            <p>El tractor hace una espera de 2s y tras esto se desplaza hacia la izquierda y tras se oculta el contenido y luego se muestra poco a poco.</p>
+        </div>
+        <div id="tab4">
+            <h2>Efecto nombres</h2>
+            <p>Para crear los efectos del titulo de las casas he usado una libreria de CSS que se llama <a href="http://daneden.github.io/animate.css/">animate.css</a>.</p>
+            <br><img src="images/documentacion/captura4.png" alt="captura4"><br>
+            <p>El funcionamiento es simple iniciamos wow y luedo elegimos un efecto del extenso catálogo y colocamos la duración del efecto. Esta libreria tambien hace uso de Javascript ya que requiere del archivo WoW.js para que cuando el titulo sea visible se active el efecto.</p>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>

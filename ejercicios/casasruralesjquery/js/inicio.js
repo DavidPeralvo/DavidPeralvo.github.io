@@ -9,9 +9,6 @@ $(document).ready(function(){
     tractor.delay(2000);
     tractor.animate({left:'100%'},2000);
 
-
-
-
     var  intro=$(".contenido");
     intro.delay(1500);
     intro.hide();
