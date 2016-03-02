@@ -143,9 +143,24 @@ header{
          margin: 0;
 
      }
- }
-body{
 
-}
+        noscript{
+            top: 30%;
+            left: 25%;
+            position: absolute;
+            font-size: 1.7em;
+            padding: 5%;
+            color: black;
+            background: white;
+        }
+     #cookie{
+         text-align: justify;
+         font-size: 1.7em;
+         display: none;
+         color: black;
+
+     }
+ }
+
 
 
