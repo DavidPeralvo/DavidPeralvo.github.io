@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/documentacion.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/theme.css">
     <style>
@@ -48,7 +48,8 @@
             <li><a href="#tab5">LightBox</a></li>
             <li><a href="#tab6">Validacion</a></li>
             <li><a href="#tab7">Fechas</a></li>
-            <li><a href="#tab8">JQueryUI</a></li>
+            <li><a href="#tab8">Cookie</a></li>
+            <li><a href="#tab9">JQueryUI</a></li>
         </ul>
         <div id="tab1">
             <h2>JavaScript activo</h2><br>
@@ -77,6 +78,47 @@
             <p>Para crear los efectos del titulo de las casas he usado una libreria de CSS que se llama <a href="http://daneden.github.io/animate.css/">animate.css</a>.</p>
             <br><img src="images/documentacion/captura4.png" alt="captura4"><br>
             <p>El funcionamiento es simple iniciamos wow y luedo elegimos un efecto del extenso catálogo y colocamos la duración del efecto. Esta libreria tambien hace uso de Javascript ya que requiere del archivo WoW.js para que cuando el titulo sea visible se active el efecto.</p>
+        </div>
+        <div id="tab5">
+            <h2>Lightbox</h2>
+            <p>Para represantar las imagenes de las partes de la casa rural se ha usado un lightbox, en mi caso he usado una librería de JQuery llamada fancybox, aqui dejo el
+                <a href="http://fancybox.net/">LINK</a> con toda la información. El uso de esta libreria es muy sencillo, en el archivo js solo debemos hacer la llamada al metodo y decidir los efectos de entrada y salida</p>
+            <img src="images/documentacion/captura5.png" alt=""><br>
+            <p>Y en el apartado del html debemos darle una clase a las imagenes y debemos almacenar las imagenes de cada casa en una misma galeria</p>
+            <img src="images/documentacion/captura6.png" alt=""><br>
+            <p>Y con todo esto obtenemos el siguiente resultado:</p>
+            <img src="images/documentacion/captura7.png" alt="" style="width: 60%">
+        </div>
+        <div id="tab6">
+            <h2>Validación</h2>
+            <p>Para la validación del formulario he usado un metodo creado por mi para la validación de todos los campos excepto las fechas que ya se explicará posteriormente. Para la validación he usado el siguiente método:</p>
+            <img src="images/documentacion/captura8.png" alt="">
+            <p>En método funciona de la siguiente forma, se obtiene los datos del campo se valida que no esta vacio y tras esto se valida con una expresión regular. Además de esta validación se realiza una validación de todos los campos antes de realizar la reserva.</p>
+            <img src="images/documentacion/captura9.png" alt="">
+        </div>
+        <div id="tab7">
+            <h2>Fechas</h2>
+            <p>Para la elección de fechas en el formulario he usado unas de las funciones de JQueryUI llamada <a
+                    href="https://jqueryui.com/datepicker/">Datapicker</a>, que proporciona una mejor de elegir las fechas para el usuario.</p>
+            <p>Para usar este datapicker necesitamos realizar la siguiente función en el archivo JS:</p>
+            <img src="images/documentacion/captura10.png" alt="">
+            <p>En la función indicamos cuando queremos que empieze el calendario, el formato de la fecha, el número de meses, etc... Y obtenemos un resultado como este:
+            </p><img src="images/documentacion/captura11.png" alt="">
+        </div>
+        <div id="tab8">
+            <h2>Cookie</h2>
+            <p>Para el gestión de las cookies he usado un plugin que se puede encontrar en el siguiente <a href="https://github.com/carhartl/jquery-cookie">enlace</a>. Este plugin nos permite realizar el uso de las cookies de una forma más fácil</p>
+            <p>Para crear las cookie se realizan de la siguiente forma:</p>
+            <img src="images/documentacion/captura12.png" alt="">
+            <p>Con este plugin se tiene que especificar la expiración de las cookies en este caso 365. Para obterner la información de las cookies se realiza del siguiente modo:
+            </p><img src="images/documentacion/captura13.png" alt="">
+        </div>
+        <div id="tab9">
+            <h2>JQueryUI</h2>
+            <p>La versión que se ha utlizado de JQueryUI es la 1.11.4 que puede descargar <a href="http://jqueryui.com/download/">aquí</a>.
+            <p>Para el uso de la web son necesarias las siguientes lineas</p>
+            <img src="images/documentacion/captura14.png" alt="">
+            <
         </div>
     </div>
 
